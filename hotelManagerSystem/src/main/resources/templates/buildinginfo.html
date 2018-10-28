@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" id=test value="测试"> 
+<h1 id=h1>11</h1>
+<h2>1111111111</h2>
+<table id="test1"></table>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#test").bind("click",function(){
+			$.ajax({
+				url:"/roominfo",
+				type:"get",
+				dataType:"Json",
+				success:function(data){
+					console.log(data);
+					var a = $("#h1");
+					
+					a.innerHTML=data;
+					console.log(data.roomId)
+					console.log(data['roomId']);
+				}
+			});
+		})
+	});
+</script>
+</html>

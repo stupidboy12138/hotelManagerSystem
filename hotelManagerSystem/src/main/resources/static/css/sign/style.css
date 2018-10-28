@@ -1,0 +1,14 @@
+body {
+    background-image: url('../../img/500500562.jpg');
+    background-size:cover;
+}
+.mycenter{
+    height: 316px;
+    width: 271px;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.offset{
+    margin-top: 149px; 
+}
